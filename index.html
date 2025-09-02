@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa da Acessibilidade - Cariacica</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; font-family: Arial, sans-serif; }
+    header { background: #2c3e50; color: white; text-align: center; padding: 15px; font-size: 1.5em; }
+    #map { height: calc(100% - 120px); width: 100%; }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 10px; position: relative; bottom: 0; width: 100%; }
+  </style>
+</head>
+<body>
+<header>🌍 Mapa da Acessibilidade em Cariacica</header>
+<div class="folium-map" id="map" id="map_0614d06d58e07086b24b6b6f138f710a" ></div>
+<footer>Desenvolvido com ❤️ usando Leaflet e OpenStreetMap</footer>
+<script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0614d06d58e07086b24b6b6f138f710a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0614d06d58e07086b24b6b6f138f710a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0614d06d58e07086b24b6b6f138f710a = L.map(
+                "map_0614d06d58e07086b24b6b6f138f710a",
+                {
+                    center: [-20.2655, -40.4203],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_0614d06d58e07086b24b6b6f138f710a);
+
+            
+
+        
+    
+            var tile_layer_34c191c939c339320007b0717117736d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var marker_2019bec2dbedf455a88bf1b8fe5bace8 = L.marker(
+                [-20.3392461, -40.3831912],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_13b5da77b15b3aee8c73cec505b6b37c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2019bec2dbedf455a88bf1b8fe5bace8.setIcon(icon_13b5da77b15b3aee8c73cec505b6b37c);
+        
+    
+        var popup_816f70c2014a396d8002c752fdce4c89 = L.popup({"maxWidth": 350});
+
+        
+            var html_881cfb74dda8f33584901e6af31a90b6 = $(`<div id="html_881cfb74dda8f33584901e6af31a90b6" style="width: 100.0%; height: 100.0%;"><b>Biblioteca Pública Municipal Madeira de Freitas</b><br/><i>Melhor acessibilidade</i><br/>Acervo em braille e audiolivros; espaço cultural inclusivo.<br/><a href='https://cariacica.es.gov.br/noticias/75671' target='_blank'>Fonte</a></div>`)[0];
+            popup_816f70c2014a396d8002c752fdce4c89.setContent(html_881cfb74dda8f33584901e6af31a90b6);
+        
+
+        marker_2019bec2dbedf455a88bf1b8fe5bace8.bindPopup(popup_816f70c2014a396d8002c752fdce4c89)
+        ;
+
+        
+    
+    
+            marker_2019bec2dbedf455a88bf1b8fe5bace8.bindTooltip(
+                `<div>
+                     Biblioteca Pública Municipal Madeira de Freitas • Melhor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0defe753da0cf338704a89c7b30a296a = L.marker(
+                [-20.3081252, -40.3664389],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_058ade52b3b77f716b88b5cd9cfbfbd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0defe753da0cf338704a89c7b30a296a.setIcon(icon_058ade52b3b77f716b88b5cd9cfbfbd8);
+        
+    
+        var popup_055734c1d2ddff269d1f95efb18a82c9 = L.popup({"maxWidth": 350});
+
+        
+            var html_72a4747629a285c060d819cfc355d46b = $(`<div id="html_72a4747629a285c060d819cfc355d46b" style="width: 100.0%; height: 100.0%;"><b>Estação Aquaviária Porto de Santana</b><br/><i>Melhor acessibilidade</i><br/>Testes de rampa para cadeirantes e acesso inclusivo no transporte.<br/><a href='https://esbrasil.com.br/aquaviario-acessibilidade-a-cadeirantes-cariacica/' target='_blank'>Fonte</a></div>`)[0];
+            popup_055734c1d2ddff269d1f95efb18a82c9.setContent(html_72a4747629a285c060d819cfc355d46b);
+        
+
+        marker_0defe753da0cf338704a89c7b30a296a.bindPopup(popup_055734c1d2ddff269d1f95efb18a82c9)
+        ;
+
+        
+    
+    
+            marker_0defe753da0cf338704a89c7b30a296a.bindTooltip(
+                `<div>
+                     Estação Aquaviária Porto de Santana • Melhor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_158097f63840bb41108280f15934c011 = L.marker(
+                [-20.3351157, -40.3722404],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_3e02d323317097a7c7680a5e7555141b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_158097f63840bb41108280f15934c011.setIcon(icon_3e02d323317097a7c7680a5e7555141b);
+        
+    
+        var popup_10d98426a0033dd90740e60f6a334192 = L.popup({"maxWidth": 350});
+
+        
+            var html_9cbed05550e1148a793394b2f69a1cc9 = $(`<div id="html_9cbed05550e1148a793394b2f69a1cc9" style="width: 100.0%; height: 100.0%;"><b>Corredor Av. Mário Gurgel</b><br/><i>Melhor acessibilidade</i><br/>Instalação de rampas em vias e prédios públicos.<br/><a href='https://cariacica.es.gov.br/noticias/71076' target='_blank'>Fonte</a></div>`)[0];
+            popup_10d98426a0033dd90740e60f6a334192.setContent(html_9cbed05550e1148a793394b2f69a1cc9);
+        
+
+        marker_158097f63840bb41108280f15934c011.bindPopup(popup_10d98426a0033dd90740e60f6a334192)
+        ;
+
+        
+    
+    
+            marker_158097f63840bb41108280f15934c011.bindTooltip(
+                `<div>
+                     Corredor Av. Mário Gurgel • Melhor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4cb2a32c8b30055244212304c6a900d3 = L.marker(
+                [-20.3073, -40.3678],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_53d4f09a0823cd229b3ebcae16a97c41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4cb2a32c8b30055244212304c6a900d3.setIcon(icon_53d4f09a0823cd229b3ebcae16a97c41);
+        
+    
+        var popup_8c59ee3c90ca8bea627d80b3962107ba = L.popup({"maxWidth": 350});
+
+        
+            var html_519a1aec9789b32b07be6cef18b35e12 = $(`<div id="html_519a1aec9789b32b07be6cef18b35e12" style="width: 100.0%; height: 100.0%;"><b>CRAS de Porto de Santana</b><br/><i>Melhor acessibilidade</i><br/>Novo prédio com acessibilidade completa, espaços amplos e climatizados.<br/><a href='https://cariacica.es.gov.br/noticias/74958' target='_blank'>Fonte</a></div>`)[0];
+            popup_8c59ee3c90ca8bea627d80b3962107ba.setContent(html_519a1aec9789b32b07be6cef18b35e12);
+        
+
+        marker_4cb2a32c8b30055244212304c6a900d3.bindPopup(popup_8c59ee3c90ca8bea627d80b3962107ba)
+        ;
+
+        
+    
+    
+            marker_4cb2a32c8b30055244212304c6a900d3.bindTooltip(
+                `<div>
+                     CRAS de Porto de Santana • Melhor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5ff86787194e82a4548e16fdf75baca = L.marker(
+                [-20.2976, -40.3712],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_9b7e753cea485bfb01fbf1d2ef91fdd5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d5ff86787194e82a4548e16fdf75baca.setIcon(icon_9b7e753cea485bfb01fbf1d2ef91fdd5);
+        
+    
+        var popup_181394626607f76e04f8412f96132ac7 = L.popup({"maxWidth": 350});
+
+        
+            var html_3d829d2456c31bc07e8e2af043f381e2 = $(`<div id="html_3d829d2456c31bc07e8e2af043f381e2" style="width: 100.0%; height: 100.0%;"><b>Escola Municipal Antero José do Nascimento</b><br/><i>Melhor acessibilidade</i><br/>Relatos de aluna cadeirante: elevador, rampas e transporte adaptado.<br/><a href='https://cariacica.es.gov.br/noticias/5747' target='_blank'>Fonte</a></div>`)[0];
+            popup_181394626607f76e04f8412f96132ac7.setContent(html_3d829d2456c31bc07e8e2af043f381e2);
+        
+
+        marker_d5ff86787194e82a4548e16fdf75baca.bindPopup(popup_181394626607f76e04f8412f96132ac7)
+        ;
+
+        
+    
+    
+            marker_d5ff86787194e82a4548e16fdf75baca.bindTooltip(
+                `<div>
+                     Escola Municipal Antero José do Nascimento • Melhor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cb18a656e3a858f26f5f36e39133eab = L.marker(
+                [-20.3182, -40.4012],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_a90a90115f4c5b5b207c83914d880938 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1cb18a656e3a858f26f5f36e39133eab.setIcon(icon_a90a90115f4c5b5b207c83914d880938);
+        
+    
+        var popup_f83fb1d0f0a59338f6015fff4b2cd615 = L.popup({"maxWidth": 350});
+
+        
+            var html_e3cbf442430a5a375f8d0cf72bdc3c2b = $(`<div id="html_e3cbf442430a5a375f8d0cf72bdc3c2b" style="width: 100.0%; height: 100.0%;"><b>EMEF Euvira Benedita Cardoso (Novo Brasil)</b><br/><i>Melhor acessibilidade</i><br/>Uso de impressoras 3D para materiais em braille e pedagógicos táteis.<br/><a href='https://folhacariacica.com.br/acessibilidade-em-destaque-alfabeto-em-braille-impresso-em-3d-transforma-a-educacao-em-cariacica' target='_blank'>Fonte</a></div>`)[0];
+            popup_f83fb1d0f0a59338f6015fff4b2cd615.setContent(html_e3cbf442430a5a375f8d0cf72bdc3c2b);
+        
+
+        marker_1cb18a656e3a858f26f5f36e39133eab.bindPopup(popup_f83fb1d0f0a59338f6015fff4b2cd615)
+        ;
+
+        
+    
+    
+            marker_1cb18a656e3a858f26f5f36e39133eab.bindTooltip(
+                `<div>
+                     EMEF Euvira Benedita Cardoso (Novo Brasil) • Melhor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30b7afb38be45e7545bb8ecd2068ba6b = L.marker(
+                [-20.326, -40.369],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_bb013cbb125ee96c67e653c113cf5699 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_30b7afb38be45e7545bb8ecd2068ba6b.setIcon(icon_bb013cbb125ee96c67e653c113cf5699);
+        
+    
+        var popup_2b9cfc39e0ad1cbaa263eb16e5b4cfff = L.popup({"maxWidth": 350});
+
+        
+            var html_8bf8933e7f7be7e54b0b8a8507c088ac = $(`<div id="html_8bf8933e7f7be7e54b0b8a8507c088ac" style="width: 100.0%; height: 100.0%;"><b>Secretaria Municipal de Educação (transporte adaptado)</b><br/><i>Melhor acessibilidade</i><br/>Veículos com plataforma elevatória, espaço para cadeirantes e cão-guia.<br/><a href='https://cariacica.es.gov.br/noticias/42096' target='_blank'>Fonte</a></div>`)[0];
+            popup_2b9cfc39e0ad1cbaa263eb16e5b4cfff.setContent(html_8bf8933e7f7be7e54b0b8a8507c088ac);
+        
+
+        marker_30b7afb38be45e7545bb8ecd2068ba6b.bindPopup(popup_2b9cfc39e0ad1cbaa263eb16e5b4cfff)
+        ;
+
+        
+    
+    
+            marker_30b7afb38be45e7545bb8ecd2068ba6b.bindTooltip(
+                `<div>
+                     Secretaria Municipal de Educação (transporte adaptado) • Melhor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff8b5c91b94afb5b91def2f75c05566a = L.marker(
+                [-20.3351157, -40.3722404],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_52b6e128bac7344193859aecf43e07f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ff8b5c91b94afb5b91def2f75c05566a.setIcon(icon_52b6e128bac7344193859aecf43e07f0);
+        
+    
+        var popup_2277a0320ab0817eee46163ceebac909 = L.popup({"maxWidth": 350});
+
+        
+            var html_b1fe3252c78e7b573a1308ee33dbd474 = $(`<div id="html_b1fe3252c78e7b573a1308ee33dbd474" style="width: 100.0%; height: 100.0%;"><b>Prefeitura Municipal de Cariacica</b><br/><i>Atenção acessibilidade</i><br/>Reportagens apontaram rampas fora do padrão e banheiros sem acessibilidade (2019).<br/><a href='https://www.agazeta.com.br/es/gv/nao-cumprimos-e-ponto-rampas-da-grande-vitoria-estao-fora-da-lei-0619' target='_blank'>Fonte</a></div>`)[0];
+            popup_2277a0320ab0817eee46163ceebac909.setContent(html_b1fe3252c78e7b573a1308ee33dbd474);
+        
+
+        marker_ff8b5c91b94afb5b91def2f75c05566a.bindPopup(popup_2277a0320ab0817eee46163ceebac909)
+        ;
+
+        
+    
+    
+            marker_ff8b5c91b94afb5b91def2f75c05566a.bindTooltip(
+                `<div>
+                     Prefeitura Municipal de Cariacica • Atenção
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e3bda3dd5e5c5c873ca1d3d754f727b7 = L.marker(
+                [-20.333, -40.3735],
+                {}
+            ).addTo(map_0614d06d58e07086b24b6b6f138f710a);
+        
+    
+            var icon_f799e733684f4279aaed8f2d68a3184b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "exclamation-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3bda3dd5e5c5c873ca1d3d754f727b7.setIcon(icon_f799e733684f4279aaed8f2d68a3184b);
+        
+    
+        var popup_198f24b211dbb8d92f64c7258a426a3f = L.popup({"maxWidth": 350});
+
+        
+            var html_4fb54d5129c52ff541349574062e4e92 = $(`<div id="html_4fb54d5129c52ff541349574062e4e92" style="width: 100.0%; height: 100.0%;"><b>Câmara Municipal de Cariacica</b><br/><i>Atenção acessibilidade</i><br/>Falta de sanitários acessíveis relatada em 2019.<br/><a href='https://www.agazeta.com.br/es/gv/nao-cumprimos-e-ponto-rampas-da-grande-vitoria-estao-fora-da-lei-0619' target='_blank'>Fonte</a></div>`)[0];
+            popup_198f24b211dbb8d92f64c7258a426a3f.setContent(html_4fb54d5129c52ff541349574062e4e92);
+        
+
+        marker_e3bda3dd5e5c5c873ca1d3d754f727b7.bindPopup(popup_198f24b211dbb8d92f64c7258a426a3f)
+        ;
+
+        
+    
+    
+            marker_e3bda3dd5e5c5c873ca1d3d754f727b7.bindTooltip(
+                `<div>
+                     Câmara Municipal de Cariacica • Atenção
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</body>
+</html>
