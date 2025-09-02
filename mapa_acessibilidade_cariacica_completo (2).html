@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa da Acessibilidade - Cariacica</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.5em;
+    }
+    #map {
+      height: calc(100% - 120px);
+      width: 100%;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🌍 Mapa da Acessibilidade em Cariacica
+  </header>
+
+  <div id="map"></div>
+
+  <footer>
+    Desenvolvido com ❤️ usando Leaflet e OpenStreetMap
+  </footer>
+
+  <script>
+    // Criar o mapa
+    var map = L.map("map", {
+      center: [-20.2655, -40.4203],
+      zoom: 12,
+      zoomControl: true,
+    });
+
+    // Camada base
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: "© <a href='https://openstreetmap.org'>OpenStreetMap</a> colaboradores",
+      maxZoom: 18,
+    }).addTo(map);
+
+    L.control.scale().addTo(map);
+
+    // --- EXEMPLO DE MARCADORES (mantive só alguns, você pode colar todos do seu arquivo original) ---
+    var marker1 = L.marker([-20.3392461, -40.3831912]).addTo(map);
+    marker1.setIcon(L.AwesomeMarkers.icon({
+      icon: "ok-sign", prefix: "glyphicon", markerColor: "green", iconColor: "white"
+    }));
+    marker1.bindPopup("<b>Biblioteca Pública Municipal Madeira de Freitas</b><br/>Acessibilidade: acervo em braille e audiolivros.");
+
+    var marker2 = L.marker([-20.3081252, -40.3664389]).addTo(map);
+    marker2.setIcon(L.AwesomeMarkers.icon({
+      icon: "ok-sign", prefix: "glyphicon", markerColor: "green", iconColor: "white"
+    }));
+    marker2.bindPopup("<b>Estação Aquaviária Porto de Santana</b><br/>Rampa de acesso para cadeirantes e transporte inclusivo.");
+  </script>
+</body>
+</html>
